@@ -1,0 +1,46 @@
+
+<h3 style="text-align:center;">NineAndNine Print</h3>
+<script language="javascript" type="text/javascript">
+    document.write("<table border='1' width='100%'>");
+
+    document.write("<tr>");
+    for (var i = 2; i <= 9; i++) // 단 반복
+    {
+        document.write("<td bgcolor='silver' align='center'>" + i + "Dan</td>");
+    }
+    document.write("<tr>");
+
+    document.write("<tr>");
+    for (var j = 2; j <= 9; j++)
+    {
+        document.write("<td>");
+        for (var k = 1; k <= 9; k++)
+        {
+            document.write(j + " * " + k + " = " + (j * k) + "<br />");
+        }
+        document.write("</td>");
+    }
+    document.write("<tr>");
+
+    document.write("</table>");
+</script>
+
+<script language="javascript" type="text/javascript">
+    function Say(str, cnt)
+    {
+        for( var i=0; i < cnt; i++)
+        {
+            document.write(str);
+        }
+    }
+</script>
+
+<script language="javascript" type="text/javascript">
+    Say("Hi~<br />", 3);
+</script>
+
+<input type="button" value="Greetings" onclick="window.alert('Hello^^')">
+
+<script language="javascript" type="text/javascript"
+        src = "JS/window_object.js">
+</script>
